@@ -194,4 +194,4 @@ our-cookbook/
 
 Made with ❤️ by the Retail Brand Team
 
-*Last updated: December 2024*
+*Last updated: December 2025*
