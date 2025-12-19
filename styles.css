@@ -343,13 +343,44 @@ a {
 
 /* Recipe Image */
 .recipe-image-container {
-  margin: var(--space-xl) 0;
   border: 3px solid var(--black);
+  overflow: hidden;
 }
 
 .recipe-image {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
+}
+
+/* Ingredients + Photo Row */
+.ingredients-photo-row {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-lg);
+  align-items: start;
+  margin-bottom: var(--space-xl);
+}
+
+.ingredients-photo-row .recipe-section {
+  margin-bottom: 0;
+  max-width: none;
+}
+
+.ingredients-photo-row .recipe-image-container {
+  height: 100%;
+  min-height: 400px;
+}
+
+@media (max-width: 900px) {
+  .ingredients-photo-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .ingredients-photo-row .recipe-image-container {
+    min-height: 300px;
+  }
 }
 
 /* Recipe Sections */
