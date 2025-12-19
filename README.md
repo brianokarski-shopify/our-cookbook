@@ -183,12 +183,14 @@ our-cookbook/
 
 ## 👨‍👩‍👧‍👦 Retail Brand Team
 
-- **Brian** — Lemon Garlic Pasta
-- **Tasha** — *Add your recipe!*
-- **Alex** — Berry Smoothie Bowl
-- **Julia** — *Add your recipe!*
-- **Madison** — Chocolate Chip Cookies
-- **Caroline** — *Add your recipe!*
+- **Brian** — Simple Crunchy Bread 🍞
+- **Tasha** — *Your recipe here!*
+- **Alex** — *Your recipe here!*
+- **Julia** — *Your recipe here!*
+- **Madison** — *Your recipe here!*
+- **Caroline** — *Your recipe here!*
+
+**Be the first to add yours!** Just tell Cursor what you want to make. 🚀
 
 ---
 
