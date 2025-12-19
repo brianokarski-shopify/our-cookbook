@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Cookbook 🍳</title>
+  <title>Our Cookbook</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navigation Bar (same on every page) -->
+  <!-- Inspiration Banner -->
+  <div class="inspiration-banner">
+    Site inspired by <a href="https://malaproject.com" target="_blank">malaproject.com</a> — try asking Cursor to redesign this like your favorite food site 👀
+  </div>
+
+  <!-- Navigation Bar -->
   <nav class="nav">
     <div class="nav-content">
-      <a href="index.html" class="nav-logo">
-        🍳 Our Cookbook
-      </a>
+      <a href="index.html" class="nav-logo">Our Cookbook</a>
       <ul class="nav-links">
-        <li><a href="index.html">All Recipes</a></li>
-        <li><a href="#contribute">How to Contribute</a></li>
+        <li><a href="index.html">Recipes</a></li>
+        <li><a href="#contribute">Contribute</a></li>
       </ul>
     </div>
   </nav>
@@ -27,7 +30,7 @@
     <!-- Hero Section -->
     <header class="hero">
       <h1>Our Cookbook</h1>
-      <p class="subtitle">A collaborative collection of recipes from the Retail Brand Team. Add yours below!</p>
+      <p class="subtitle">A collaborative collection of recipes from the Retail Brand Team</p>
     </header>
 
     <!-- Recipe Grid -->
@@ -39,10 +42,10 @@
         <div class="recipe-card-content">
           <span class="category-badge">Bread</span>
           <h3>Simple Crunchy Bread</h3>
-          <p>No-knead artisan bread with a crackling crust. Just 4 ingredients and a little patience.</p>
+          <p>No-knead artisan bread with a crackling crust. Just 5 ingredients and a little patience.</p>
           <div class="recipe-card-meta">
-            <span>⏱️ 45 min bake</span>
-            <span>👤 By Brian</span>
+            <span>40 min bake</span>
+            <span>By Brian</span>
           </div>
         </div>
       </a>
@@ -50,7 +53,6 @@
       <!-- 
         ═══════════════════════════════════════════════════════════
         ADD YOUR RECIPE CARD HERE!
-        Copy the template below and fill in your details:
         ═══════════════════════════════════════════════════════════
         
         <a href="your-recipe-name.html" class="recipe-card">
@@ -60,8 +62,8 @@
             <h3>Your Recipe Title</h3>
             <p>A short, enticing description of your dish.</p>
             <div class="recipe-card-meta">
-              <span>⏱️ XX min</span>
-              <span>👤 By YourName</span>
+              <span>XX min</span>
+              <span>By YourName</span>
             </div>
           </div>
         </a>
@@ -70,30 +72,23 @@
     </section>
 
     <!-- How to Contribute Section -->
-    <section id="contribute" style="margin-top: 4rem; padding: 2rem; background: var(--color-warm-white); border-radius: var(--border-radius); border: 1px solid var(--color-border);">
-      <h2 style="font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 1rem; color: var(--color-charcoal);">📝 How to Add Your Recipe</h2>
-      <p style="margin-bottom: 1.5rem; color: var(--color-warm-gray); font-size: 1.1rem;">
-        <strong>You don't need to know how to code!</strong> Just tell Cursor AI what you want:
-      </p>
-      <div style="background: var(--color-highlight); padding: 1.25rem; border-radius: var(--border-radius); margin-bottom: 1.5rem; border-left: 4px solid var(--color-terracotta);">
-        <p style="font-style: italic; color: var(--color-charcoal); margin: 0; font-size: 1.05rem;">
-          "Add a recipe for grandma's famous lasagna with a 90 minute cook time"
-        </p>
+    <section id="contribute">
+      <h2>Add Your Recipe</h2>
+      <p>You don't need to know how to code. Just tell Cursor AI what you want:</p>
+      <div class="example-prompt">
+        <p>"Add a recipe for grandma's famous lasagna with a 90 minute cook time"</p>
       </div>
-      <p style="color: var(--color-warm-gray); margin-bottom: 1rem;">Cursor will create the recipe page and add it to the homepage for you. Just review, commit, and push!</p>
-      <p style="font-size: 0.9rem; color: var(--color-sage);">
-        📖 <strong>New to Cursor?</strong> Check the <a href="https://github.com/brianokarski-shopify/our-cookbook#readme" style="color: var(--color-terracotta);">README</a> for setup instructions.
-      </p>
+      <p>Cursor creates the page and adds it here. Review, commit, push — done.</p>
+      <p style="margin-top: var(--space-md);"><a href="https://github.com/brianokarski-shopify/our-cookbook#readme">Read the full guide →</a></p>
     </section>
 
   </main>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>Made with ❤️ by the Retail Brand Team</p>
+    <p>Made with care by the Retail Brand Team</p>
     <p><a href="https://github.com/brianokarski-shopify/our-cookbook">View on GitHub</a></p>
   </footer>
 
 </body>
 </html>
-
