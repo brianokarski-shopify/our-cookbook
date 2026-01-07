@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Herby Salad | Our Cookbook</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Page-only overrides for an Alison Roman–style, minimal recipe layout */
+    :root { --accent-yellow: #C5B245; }
+    body { background: var(--cream); color: #111111; font-family: var(--font); font-size: 17px; }
+    .top-banner { display: block; }
+    /* Keep header consistent with site */
+    .nav { background: var(--cream); border-bottom: 3px solid var(--black); padding: var(--space-md) var(--space-lg); }
+    .nav-logo { font-family: var(--font); font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; }
+    .nav-links a { text-transform: uppercase; font-weight: 700; border: 2px solid transparent; padding: 0.5rem 1rem; font-size: 0.875rem; }
+    .nav-links a:hover { border-color: var(--black); text-decoration: none; }
+    .recipe-header { background: transparent; padding: 3rem var(--space-lg) 1.5rem; border-bottom: 1px solid #111111; text-align: left; }
+    .recipe-header h1 { font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif; font-size: clamp(3rem, 6vw, 4.25rem); font-weight: 400; text-transform: none; letter-spacing: -0.015em; line-height: 1.04; margin-bottom: 0.5rem; }
+    .recipe-header .author { font-style: normal; font-weight: 600; }
+    .recipe-meta { display: none; }
+    /* White content area aligned with header left padding */
+    .container { max-width: 1200px; background: transparent; margin-left: var(--space-lg); margin-right: auto; padding: 2rem 0; }
+    .recipe-section { max-width: 684px; margin-bottom: 2rem; }
+    .recipe-section h2 { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; border-bottom: 1px solid #111; margin-bottom: 0.85rem; box-shadow: none; display: inline-block; padding-bottom: 0.35rem; }
+    .ingredients-list { list-style: disc; background: transparent; border: none; padding: 0 0 0 1.25rem; }
+    .ingredients-list li { border: none; padding: 0.45rem 0; font-size: 1.08rem; font-weight: 400; line-height: 1.65; }
+    .instructions-list { list-style: decimal; counter-reset: none; padding-left: 1.25rem; }
+    .instructions-list li { border: none; padding: 0.45rem 0; background: transparent; position: static; font-size: 1.08rem; line-height: 1.7; }
+    .instructions-list li::before { content: none; }
+    .recipe-notes { background: transparent; border: none; padding: 0; margin-top: 1.5rem; }
+    .recipe-notes h3 { color: inherit; font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; text-transform: none; }
+    .recipe-notes p { color: inherit; }
+    .footer { background: transparent; color: inherit; border-top: 1px solid #111111; }
+    .footer a { color: inherit; text-decoration: underline; }
+    /* Sqirl-style product layout */
+    .product-layout { display: grid; grid-template-columns: 1fr 1fr 0.9fr; gap: 2.5rem; align-items: start; }
+    .product-media { grid-column: 1 / 3; position: sticky; top: 1.25rem; background: transparent; padding: 0; border: none; margin-left: 0; }
+    .product-image { width: 100%; height: auto; display: block; border: none; margin: 0; }
+    .product-details { width: 100%; grid-column: 3; }
+    .divider { border: 0; border-top: 1px solid #111; margin: 1.25rem 0; box-shadow: 0 -3px 0 var(--accent-yellow) inset; }
+    /* Bottom quote band */
+    .quote-band { background: var(--accent-yellow); border-top: 1px solid #111; margin-top: 2rem; padding: 5rem var(--space-lg); text-align: center; }
+    .quote-band blockquote { font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif; font-weight: 400; font-size: clamp(38px, 6.5vw, 58px); letter-spacing: -0.01em; max-width: 95%; margin: 0 auto; }
+    .quote-band cite { display: block; margin-top: 0.75rem; font-weight: 700; font-style: normal; }
+    @media (max-width: 900px) {
+      .product-layout { grid-template-columns: 1fr; }
+      .product-media { position: static; grid-column: auto; }
+      .product-details { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Banner -->
+  <div class="top-banner">
+    Site inspired by <a href="https://potluckmarket.com">potluckmarket.com</a> — Ask Cursor to redesign this like your favorite food site 👀
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-content">
+      <a href="index.html" class="nav-logo">Our Cookbook</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Recipes</a></li>
+        <li><a href="index.html#contribute">Add Yours</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Recipe Header -->
+  <header class="recipe-header">
+    <h1>Green Herby Salad</h1>
+    <p class="author">A recipe by <strong>Alex</strong></p>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="product-layout">
+      <div class="product-media">
+        <img src="images/Alex-Salad.jpeg" alt="Green Herby Salad" class="product-image">
+      </div>
+      <div class="product-details">
+        <section class="recipe-section" style="margin-top: 0;">
+          <p>I've become known as the “salad lady” among my friends, who often request that I bring a salad to their dinner parties. The magic is really in the herbs, salt, and lemon. Often I'll add a little bit of shallot to the dressing, and let it sit in the lemon to mellow it out. The best part of salad is that there are a ton of options and you can make it to your taste.</p>
+          <p style="margin-top: 0.75rem;">Here's one of my favorite combinations:</p>
+        </section>
+        <hr class="divider">
+        <section class="recipe-section">
+          <h2>Ingredients</h2>
+          <ul class="ingredients-list">
+            <li>4 cups greens (little gems, arugula, butter lettuce, or baby spinach)</li>
+            <li>Leaves and tender stems of your favorite herbs, like cilantro, basil, parsley, chives. My go tos are mint and dill, or even just dill.</li>
+            <li>Calevestrano olives, chopped</li>
+            <li>Really good feta</li>
+            <li>Persian cucumbers, sliced</li>
+            <li>Pistachios (if you like crunch)</li>
+            <li>1 Avocado, diced</li>
+          </ul>
+        </section>
+        <hr class="divider">
+        <section class="recipe-section">
+          <h2>Dressing</h2>
+          <ul class="ingredients-list">
+            <li>1 lemon</li>
+            <li>1 teaspoon of diced shallot</li>
+            <li>Flaky salt and freshly ground black pepper</li>
+            <li>Light olive oil</li>
+          </ul>
+        </section>
+        <hr class="divider">
+        <section class="recipe-section">
+          <h2>Instructions</h2>
+          <ol class="instructions-list">
+            <li>Add everything to a bowl</li>
+            <li>Add dressing and combine right before serving</li>
+          </ol>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <section class="quote-band">
+    <blockquote>A good salad should be an expression of the best things about the ingredient.</blockquote>
+    <cite>Julia Sherman</cite>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><a href="index.html">← Back to Recipes</a></p>
+    <p>Made by the Retail Brand Team</p>
+  </footer>
+
+</body>
+</html>
